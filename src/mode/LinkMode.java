@@ -44,7 +44,7 @@ public abstract class LinkMode extends Mode {
     @Override
     public void mouseReleased(int x, int y) {
         ShapeObject target = canvas.findShapeAt(x, y);
-        if (target == null || startPort == null || target == this.startShape) {
+        if (target == null || startPort == null || target == this.startShape) { // 起始同一個object -> reset
             resetPorts();
             return;
         }

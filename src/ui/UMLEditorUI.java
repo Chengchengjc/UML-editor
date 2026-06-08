@@ -110,7 +110,7 @@ public class UMLEditorUI extends JFrame {
     }
 
     private void setMode(Mode newMode, JButton newButton) {
-        // 更新mode 若現在是建立物件則保存previousMode
+        // 更新mode
         canvas.setMode(newMode);
         activeButton = newButton;
         updateButtonColors(activeButton);
