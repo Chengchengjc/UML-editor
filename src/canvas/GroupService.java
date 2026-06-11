@@ -56,7 +56,7 @@ class GroupService {
                 objects.add(obj);
                 obj.setSelected(false);
             }
-        } else { // 不是群組物件就直接放回去
+        } else if(groupToUngroup != null) { // 不是群組物件就直接放回去
             objects.add(groupToUngroup);
         }
 
